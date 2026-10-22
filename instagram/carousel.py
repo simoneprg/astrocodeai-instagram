@@ -21,6 +21,23 @@ RED = (230, 40, 40)
 GLYPH = os.environ.get("GLYPH_FONT", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 GLYPHS = "♈♉♊♋♌♍♎♏♐♑♒♓"
 
+BADGE_URL = "https://play.google.com/intl/en_us/badges/static/images/badges/{}_badge_web_generic.png"
+
+def badge(lang):
+    """Official 'Get it on Google Play' badge (it/en), cached; None if unavailable."""
+    import urllib.request
+    path = f"/tmp/gp_badge_{lang}.png"
+    if not os.path.exists(path):
+        try:
+            urllib.request.urlretrieve(BADGE_URL.format(lang), path)
+        except Exception:
+            return None
+    try:
+        return Image.open(path).convert("RGBA")
+    except Exception:
+        return None
+
+
 def background(seed, ring=True):
     rnd = random.Random(seed)
     img = Image.new("RGB", (W, H), (6, 6, 10))
@@ -81,13 +98,13 @@ def rows_slide(s, d, x, maxw):
 
 
 def slide(s, i, n, handle):
-    img = background(i * 7 + 3, ring=not s.get("rows"))
+    img = background(i * 7 + 3, ring=not (s.get("rows") or s.get("badge")))
     d = ImageDraw.Draw(img)
     x, maxw = 90, W - 180
     if s.get("rows"):
         rows_slide(s, d, x, maxw)
         return footer(d, i, n, handle, img)
-    y = 520 if i else 470
+    y = 330 if s.get("badge") else (520 if i else 470)
     if s.get("kicker"):
         d.text((x, y), s["kicker"].upper(), font=font(MED, 34), fill=RED)
         y += 70
@@ -99,6 +116,12 @@ def slide(s, i, n, handle):
         bf = font(REG, 40)
         for ln in wrap(d, s["body"], bf, maxw):
             d.text((x, y), ln, font=bf, fill=(185, 185, 195)); y += 56
+    if s.get("badge"):
+        b = badge(s["badge"])
+        if b is not None:
+            bw = 620
+            b = b.resize((bw, int(b.height * bw / b.width)), Image.LANCZOS)
+            img.paste(b, ((W - bw) // 2, H - 200 - b.height), b)
     return footer(d, i, n, handle, img)
 
 
