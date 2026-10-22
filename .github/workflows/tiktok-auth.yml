@@ -1,0 +1,23 @@
+name: TikTok auth
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Authorization code shown on astrocodice.com/tiktok"
+        required: true
+permissions:
+  contents: write
+jobs:
+  auth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exchange code
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          CODE: ${{ inputs.code }}
+        run: |
+          git config user.name "astrocodeai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          python3 tiktok/publish_tiktok.py auth "$CODE"
