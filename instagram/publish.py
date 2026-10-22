@@ -4,9 +4,10 @@ Reads a JSON queue of posts, publishes every post whose publish_at has passed
 and that is not yet in instagram/published.json, via the official Instagram API
 (Instagram Login). Standard library only.
 
-Queue sources (first found wins):
-  - env QUEUE_URL  (public JSON URL, e.g. a Google Drive download link)
-  - instagram/queue.json in this repo
+Queue sources (merged):
+  - content/queue.json in this repo
+  - every .json file in the public Google Drive folder DRIVE_FOLDER_ID
+    (written daily by the Claude scheduled task)
 
 Queue item:
   {"id": "2026-10-23-it", "publish_at": "2026-10-23T17:30:00Z", "market": "IT",
@@ -85,6 +86,28 @@ def fetch_json(url):
         return json.loads(r.read())
 
 
+def drive_folder_queue(folder_id):
+    """Read every *.json file in a public ('anyone with the link') Drive folder."""
+    import re
+    req = urllib.request.Request(f"https://drive.google.com/embeddedfolderview?id={folder_id}",
+                                 headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        html = r.read().decode("utf-8", "replace")
+    ids = list(dict.fromkeys(re.findall(r"/file/d/([A-Za-z0-9_-]{20,})", html)))
+    posts = []
+    for fid in ids:
+        try:
+            data = fetch_json(f"https://drive.google.com/uc?export=download&id={fid}")
+        except Exception as e:
+            print(f"   skip drive file {fid}: {e}", file=sys.stderr)
+            continue
+        if isinstance(data, dict):
+            data = data.get("posts", [])
+        posts.extend(data)
+    print(f"drive folder: {len(ids)} files, {len(posts)} posts")
+    return posts
+
+
 def wait_ready(container_id, timeout=600):
     start = time.time()
     while time.time() - start < timeout:
@@ -129,14 +152,23 @@ def publish(item):
 
 
 def main():
-    queue_url = os.environ.get("QUEUE_URL", "").strip()
-    if queue_url:
-        queue = fetch_json(queue_url)
-    else:
-        with open(os.path.join(ROOT, "content", "queue.json")) as f:
-            queue = json.load(f)
+    with open(os.path.join(ROOT, "content", "queue.json")) as f:
+        queue = json.load(f)
     if isinstance(queue, dict):
         queue = queue.get("posts", [])
+    folder = os.environ.get("DRIVE_FOLDER_ID", "").strip()
+    if folder:
+        try:
+            queue += drive_folder_queue(folder)
+        except Exception as e:
+            print(f"drive folder unreadable: {e}", file=sys.stderr)
+    seen, uniq = set(), []
+    for it in queue:  # later files win on duplicate ids
+        if it.get("id") in seen:
+            uniq = [u for u in uniq if u["id"] != it["id"]]
+        seen.add(it.get("id"))
+        uniq.append(it)
+    queue = uniq
     log = {}
     if os.path.exists(LOG):
         with open(LOG) as f:
