@@ -10,6 +10,9 @@ Variables: TIKTOK_PRIVACY (default SELF_ONLY until the app is audited, then PUBL
 Token:     tiktok/token.enc = refresh token encrypted with the client secret
            (written by tiktok-auth.yml, rotated here on every run).
 
+Mode:      TIKTOK_MODE=PHOTO (default): swipeable photo carousel, TikTok adds music (auto_add_music)
+           TIKTOK_MODE=VIDEO: 9:16 slideshow video with our own song
+
 Usage: python3 tiktok/publish_tiktok.py            normal run
        python3 tiktok/publish_tiktok.py auth CODE  exchange an authorization code
 """
@@ -34,6 +37,9 @@ REDIRECT_URI = "https://astrocodice.com/tiktok"
 KEY = os.environ.get("TIKTOK_CLIENT_KEY", "").strip() or "sbawatsjr98jio3x9s"  # public client key (sandbox)
 SECRET = os.environ.get("TIKTOK_CLIENT_SECRET", "")
 PRIVACY = os.environ.get("TIKTOK_PRIVACY", "").strip() or "SELF_ONLY"
+MODE = (os.environ.get("TIKTOK_MODE", "") or "PHOTO").strip().upper()  # PHOTO = swipeable slides, VIDEO = slideshow with our song
+REPO = os.environ.get("GITHUB_REPOSITORY", "simoneprg/astrocodeai-instagram")
+RAW = f"https://raw.githubusercontent.com/{REPO}/main"  # verified URL prefix on TikTok
 MARKETS = {m.strip().upper() for m in (os.environ.get("TIKTOK_MARKETS", "") or "IT,US").split(",")}
 DRY = os.environ.get("DRY_RUN") == "1"
 ONLY = os.environ.get("ONLY_ID", "").strip()
@@ -189,10 +195,59 @@ def make_video(paths, out_mp4, seed):
 
 
 # ---------- publish ----------
-def post_video(token, path, caption):
+def pick_privacy(token):
     info = api("post/publish/creator_info/query/", token)
     options = info.get("privacy_level_options") or []
-    privacy = PRIVACY if PRIVACY in options or not options else ("SELF_ONLY" if "SELF_ONLY" in options else options[0])
+    return PRIVACY if PRIVACY in options or not options else ("SELF_ONLY" if "SELF_ONLY" in options else options[0])
+
+
+def wait_publish(token, pid):
+    for _ in range(60):
+        time.sleep(10)
+        st = api("post/publish/status/fetch/", token, {"publish_id": pid})
+        status = st.get("status")
+        if status == "PUBLISH_COMPLETE":
+            return (st.get("publicaly_available_post_id") or [None])[0]
+        if status == "FAILED":
+            raise RuntimeError(f"publish failed: {st.get('fail_reason')}")
+    return None  # still processing; TikTok finishes it on its side
+
+
+def photo_urls(item):
+    """Public URLs of the rendered slides (media/<id>/slideNN.jpg), committing them if needed."""
+    sub = "media"
+    out = os.path.join(ROOT, sub, item["id"])
+    paths = slide_paths(item)
+    if not paths[0].startswith(out):
+        # rendered to /tmp: commit to media-tt/ (media/<id> stays for the Instagram workflow)
+        sub = "media-tt"
+        out = os.path.join(ROOT, sub, item["id"])
+        os.makedirs(out, exist_ok=True)
+        import shutil
+        for p in paths:
+            shutil.copy(p, out)
+        git_commit("tiktok: render media [skip ci]", sub)
+        time.sleep(20)
+    names = sorted(f for f in os.listdir(out) if f.startswith("slide") and f.endswith(".jpg"))
+    return [f"{RAW}/{sub}/{item['id']}/{n}" for n in names][:35]
+
+
+def post_photos(token, item):
+    privacy = pick_privacy(token)
+    first = item["slides"][0]
+    title = (first.get("title") or first.get("kicker") or "AstroCodice").replace("\n", " ")[:90]
+    body = {
+        "post_info": {"title": title, "description": item.get("caption", "")[:4000],
+                      "disable_comment": False, "privacy_level": privacy, "auto_add_music": True},
+        "source_info": {"source": "PULL_FROM_URL", "photo_cover_index": 0, "photo_images": photo_urls(item)},
+        "post_mode": "DIRECT_POST", "media_type": "PHOTO",
+    }
+    pid = api("post/publish/content/init/", token, body)["publish_id"]
+    return pid, privacy, wait_publish(token, pid)
+
+
+def post_video(token, path, caption):
+    privacy = pick_privacy(token)
     size = os.path.getsize(path)
     body = {
         "post_info": {"title": caption[:2200], "privacy_level": privacy, "disable_comment": False,
@@ -207,15 +262,7 @@ def post_video(token, path, caption):
         "Content-Range": f"bytes 0-{size - 1}/{size}"})
     urllib.request.urlopen(req, timeout=300).read()
     pid = init["publish_id"]
-    for _ in range(60):
-        time.sleep(10)
-        st = api("post/publish/status/fetch/", token, {"publish_id": pid})
-        status = st.get("status")
-        if status == "PUBLISH_COMPLETE":
-            return pid, privacy, (st.get("publicaly_available_post_id") or [None])[0]
-        if status == "FAILED":
-            raise RuntimeError(f"publish failed: {st.get('fail_reason')}")
-    return pid, privacy, None  # still processing; TikTok finishes it on its side
+    return pid, privacy, wait_publish(token, pid)
 
 
 def auth(code):
@@ -256,11 +303,16 @@ def main():
         print(f"-> {it['id']} [{it.get('market')}]")
         out = f"/tmp/{it['id']}.mp4"
         try:
-            make_video(slide_paths(it), out, it["id"])
-            if DRY:
-                print(f"   dry run: {out} {os.path.getsize(out)} bytes"); continue
-            pid, privacy, post_id = post_video(token, out, it.get("caption", ""))
-            log[it["id"]] = {"publish_id": pid, "post_id": post_id, "privacy": privacy,
+            if MODE == "PHOTO":
+                if DRY:
+                    print(f"   dry run: {len(slide_paths(it))} photos"); continue
+                pid, privacy, post_id = post_photos(token, it)
+            else:
+                make_video(slide_paths(it), out, it["id"])
+                if DRY:
+                    print(f"   dry run: {out} {os.path.getsize(out)} bytes"); continue
+                pid, privacy, post_id = post_video(token, out, it.get("caption", ""))
+            log[it["id"]] = {"publish_id": pid, "post_id": post_id, "privacy": privacy, "mode": MODE,
                              "published_at": now.isoformat(), "market": it.get("market")}
             print(f"   published publish_id={pid} privacy={privacy}")
         except Exception as e:
