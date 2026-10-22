@@ -1,1 +1,242 @@
-[]
+[
+ {
+  "id": "2026-10-23-it-mercurio-rx",
+  "publish_at": "2026-10-23T07:30:00Z",
+  "market": "IT",
+  "type": "CAROUSEL",
+  "slides": [
+   {
+    "kicker": "Dal 24 ottobre al 13 novembre",
+    "title": "Mercurio retrogrado in Scorpione.\nCosa cambia per il tuo segno.",
+    "body": "Cerca il tuo segno nelle prossime slide."
+   },
+   {
+    "kicker": "Il cielo di questi giorni",
+    "rows": [
+     {
+      "name": "23/10 · Sole in Scorpione",
+      "text": "Inizia la stagione dello Scorpione: emozioni intense, verità che vengono a galla."
+     },
+     {
+      "name": "24/10 · Mercurio retrogrado",
+      "text": "Da 21° a 5° Scorpione. Contratti, messaggi e vecchi discorsi tornano indietro."
+     },
+     {
+      "name": "26/10 · Luna piena in Toro",
+      "text": "A 2° Toro, opposta al Sole: si chiude un ciclo su soldi, valori e sicurezza."
+     },
+     {
+      "name": "Fino al 14/11 · Venere retrograda",
+      "text": "Dallo Scorpione alla Bilancia: le relazioni del passato chiedono una risposta."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercurio retrogrado · 1/4",
+    "rows": [
+     {
+      "glyph": 0,
+      "name": "Ariete",
+      "text": "Casa 8: soldi in comune, debiti e intimità. Rileggi bene prima di firmare o prestare."
+     },
+     {
+      "glyph": 1,
+      "name": "Toro",
+      "text": "Casa 7: partner e contratti. Un chiarimento rimandato torna sul tavolo."
+     },
+     {
+      "glyph": 2,
+      "name": "Gemelli",
+      "text": "Casa 6: lavoro quotidiano e colleghi. Ritardi e mail perse: ricontrolla tutto due volte."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercurio retrogrado · 2/4",
+    "rows": [
+     {
+      "glyph": 3,
+      "name": "Cancro",
+      "text": "Casa 5: amore e creatività. Una vecchia fiamma o un progetto lasciato a metà si rifanno vivi."
+     },
+     {
+      "glyph": 4,
+      "name": "Leone",
+      "text": "Casa 4: casa e famiglia. Discorsi in sospeso con i tuoi, lavori in casa che slittano."
+     },
+     {
+      "glyph": 5,
+      "name": "Vergine",
+      "text": "Casa 3: comunicazione e spostamenti. Messaggi fraintesi: meglio una telefonata in più."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercurio retrogrado · 3/4",
+    "rows": [
+     {
+      "glyph": 6,
+      "name": "Bilancia",
+      "text": "Casa 2: entrate e spese. Rivedi abbonamenti e acquisti prima di decidere."
+     },
+     {
+      "glyph": 7,
+      "name": "Scorpione",
+      "text": "Casa 1: sei tu il protagonista. Tempo di ripensare immagine, obiettivi e modo di porti."
+     },
+     {
+      "glyph": 8,
+      "name": "Sagittario",
+      "text": "Casa 12: il passato torna a farsi sentire. Rallenta e chiudi ciò che è rimasto aperto."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercurio retrogrado · 4/4",
+    "rows": [
+     {
+      "glyph": 9,
+      "name": "Capricorno",
+      "text": "Casa 11: amici e progetti di gruppo. Un contatto del passato può riaprire una porta."
+     },
+     {
+      "glyph": 10,
+      "name": "Acquario",
+      "text": "Casa 10: carriera e reputazione. Decisioni di lavoro da rivedere con calma, non d'impulso."
+     },
+     {
+      "glyph": 11,
+      "name": "Pesci",
+      "text": "Casa 9: viaggi, studi e convinzioni. Controlla prenotazioni e documenti, poi riparti."
+     }
+    ]
+   },
+   {
+    "kicker": "Il tuo tema, non solo il tuo segno",
+    "title": "Dove cade Mercurio nel TUO tema natale?",
+    "body": "AstroCodice calcola i transiti sul tuo cielo personale con le effemeridi NASA JPL e l'AI ti spiega cosa significano per te.\n\nScarica l'app da Google Play: 3 giorni gratis. Link in bio."
+   }
+  ],
+  "caption": "Mercurio retrogrado in Scorpione dal 24 ottobre al 13 novembre: ecco cosa cambia per tutti i 12 segni.\n\nCerca il tuo segno nelle slide. In questi giorni il cielo è carico: il Sole entra in Scorpione il 23/10, la Luna piena in Toro arriva il 26/10 e Venere resta retrograda fino al 14/11.\n\nIl segno solare però è solo l'inizio. Su AstroCodice vedi in quale casa del TUO tema natale cade Mercurio, con posizioni calcolate sulle effemeridi NASA JPL, e l'AI ti spiega cosa significa per te. Scarica l'app da Google Play, link in bio: 3 giorni gratis.\n\n#mercurioretrogrado #astrologia #oroscopo #scorpione #temanatale"
+ },
+ {
+  "id": "2026-10-23-us-mercury-rx",
+  "publish_at": "2026-10-23T22:00:00Z",
+  "market": "US",
+  "type": "CAROUSEL",
+  "slides": [
+   {
+    "kicker": "Oct 24 - Nov 13",
+    "title": "Mercury retrograde in Scorpio.\nWhat it means for your sign.",
+    "body": "Find your sign in the next slides."
+   },
+   {
+    "kicker": "The sky this week",
+    "rows": [
+     {
+      "name": "Oct 23 · Sun enters Scorpio",
+      "text": "Scorpio season begins: deep feelings, hidden truths coming to the surface."
+     },
+     {
+      "name": "Oct 24 · Mercury retrograde",
+      "text": "From 21° back to 5° Scorpio. Contracts, messages and old conversations come back."
+     },
+     {
+      "name": "Oct 26 · Full Moon in Taurus",
+      "text": "At 2° Taurus, opposite the Sun: a cycle about money, values and security closes."
+     },
+     {
+      "name": "Until Nov 14 · Venus retrograde",
+      "text": "From Scorpio back into Libra: past relationships ask for an answer."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercury retrograde · 1/4",
+    "rows": [
+     {
+      "glyph": 0,
+      "name": "Aries",
+      "text": "8th house: shared money, debts and intimacy. Read twice before you sign or lend."
+     },
+     {
+      "glyph": 1,
+      "name": "Taurus",
+      "text": "7th house: partners and contracts. A talk you postponed is back on the table."
+     },
+     {
+      "glyph": 2,
+      "name": "Gemini",
+      "text": "6th house: daily work and coworkers. Delays and lost emails: double-check everything."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercury retrograde · 2/4",
+    "rows": [
+     {
+      "glyph": 3,
+      "name": "Cancer",
+      "text": "5th house: love and creativity. An old flame or an unfinished project shows up again."
+     },
+     {
+      "glyph": 4,
+      "name": "Leo",
+      "text": "4th house: home and family. Unfinished family talks, home projects that slip."
+     },
+     {
+      "glyph": 5,
+      "name": "Virgo",
+      "text": "3rd house: communication and short trips. Texts get misread: make the extra call."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercury retrograde · 3/4",
+    "rows": [
+     {
+      "glyph": 6,
+      "name": "Libra",
+      "text": "2nd house: income and spending. Review subscriptions and purchases before deciding."
+     },
+     {
+      "glyph": 7,
+      "name": "Scorpio",
+      "text": "1st house: it's about you. Time to rethink your image, your goals, how you show up."
+     },
+     {
+      "glyph": 8,
+      "name": "Sagittarius",
+      "text": "12th house: the past speaks up. Slow down and close what was left open."
+     }
+    ]
+   },
+   {
+    "kicker": "Mercury retrograde · 4/4",
+    "rows": [
+     {
+      "glyph": 9,
+      "name": "Capricorn",
+      "text": "11th house: friends and group projects. Someone from the past can reopen a door."
+     },
+     {
+      "glyph": 10,
+      "name": "Aquarius",
+      "text": "10th house: career and reputation. Revisit work decisions calmly, not on impulse."
+     },
+     {
+      "glyph": 11,
+      "name": "Pisces",
+      "text": "9th house: travel, study and beliefs. Check bookings and documents, then go."
+     }
+    ]
+   },
+   {
+    "kicker": "Your chart, not just your sign",
+    "title": "Where does Mercury fall in YOUR birth chart?",
+    "body": "AstroCodice calculates transits on your personal sky with NASA JPL ephemerides, and its AI explains what they mean for you.\n\nGet the app on Google Play: 3 days free. Link in bio."
+   }
+  ],
+  "caption": "Mercury retrograde in Scorpio, Oct 24 to Nov 13: here's what changes for all 12 signs.\n\nFind your sign in the slides. The sky is busy this week: the Sun enters Scorpio on Oct 23, the Full Moon in Taurus rises on Oct 26 and Venus stays retrograde until Nov 14.\n\nYour Sun sign is only the start. On AstroCodice you see which house of YOUR birth chart Mercury is moving through, with positions calculated from NASA JPL ephemerides, and the AI explains what it means for you. Get the app on Google Play, link in bio: 3 days free.\n\n#mercuryretrograde #astrology #horoscope #scorpioseason #birthchart"
+ }
+]
