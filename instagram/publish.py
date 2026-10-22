@@ -11,7 +11,8 @@ Queue sources (merged):
 
 Queue item:
   {"id": "2026-10-23-it", "publish_at": "2026-10-23T17:30:00Z", "market": "IT",
-   "type": "IMAGE" | "CAROUSEL" | "REELS",
+   "type": "IMAGE" | "CAROUSEL" | "REELS",   # REELS + slides = slideshow video with music
+   "music": true,                          # CAROUSEL only: every slide carries a piece of the song
    "media": ["https://...jpg", ...],      # public URLs (video for REELS), or
    "slides": [{"kicker","title","body"}],   # rendered here to media/<id>/ and served via raw.githubusercontent
    "cover": "https://...jpg",             # optional, REELS only
@@ -38,6 +39,52 @@ ROOT = os.path.dirname(HERE)
 RAW = f"https://raw.githubusercontent.com/{REPO}/main/media"
 
 
+def make_reel(slide_paths, out_mp4, seed):
+    """Slides -> 1080x1920 MP4 with a random track from assets/music, fade out at the end."""
+    import random, subprocess, glob as _g
+    durs = [3.0] + [5.0] * (len(slide_paths) - 2) + [4.5] if len(slide_paths) > 1 else [6.0]
+    total = sum(durs)
+    tracks = sorted(_g.glob(os.path.join(ROOT, "assets", "music", "*.mp3")))
+    lst = out_mp4 + ".txt"
+    with open(lst, "w") as f:
+        for pth, d in zip(slide_paths, durs):
+            f.write(f"file '{os.path.abspath(pth)}'\nduration {d}\n")
+        f.write(f"file '{os.path.abspath(slide_paths[-1])}'\n")
+    cmd = ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst]
+    if tracks:
+        cmd += ["-ss", "8", "-i", random.Random(seed).choice(tracks)]  # skip the quiet intro
+    vf = "scale=1080:1350,pad=1080:1920:0:285:color=0x06060a,fps=30,format=yuv420p"
+    cmd += ["-vf", vf, "-t", f"{total}"]
+    if tracks:
+        cmd += ["-af", f"afade=t=in:d=0.5,afade=t=out:st={total - 2}:d=2", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
+                "-map", "0:v", "-map", "1:a"]
+    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "21", "-profile:v", "high", "-movflags", "+faststart",
+            "-shortest" if tracks else "-an", out_mp4]
+    subprocess.run(cmd, check=True)
+    os.remove(lst)
+
+
+def make_slide_videos(slide_paths, out_dir, seed, dur=12):
+    """Carousel 'slides with music': each slide becomes a short still video carrying the
+    next piece of the song, so the music continues while people swipe."""
+    import random, subprocess, glob as _g
+    tracks = sorted(_g.glob(os.path.join(ROOT, "assets", "music", "*.mp3")))
+    track = random.Random(seed).choice(tracks) if tracks else None
+    outs = []
+    for i, pth in enumerate(slide_paths):
+        out = os.path.join(out_dir, f"slide{i + 1:02d}.mp4")
+        cmd = ["ffmpeg", "-y", "-v", "error", "-loop", "1", "-framerate", "30", "-t", str(dur), "-i", pth]
+        if track:
+            cmd += ["-ss", str(8 + i * dur), "-t", str(dur), "-i", track,
+                    "-af", f"afade=t=in:d=0.3,afade=t=out:st={dur - 0.6}:d=0.6",
+                    "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-map", "0:v", "-map", "1:a"]
+        cmd += ["-vf", "scale=1080:1350,format=yuv420p", "-c:v", "libx264", "-preset", "medium",
+                "-tune", "stillimage", "-crf", "22", "-t", str(dur), "-movflags", "+faststart", out]
+        subprocess.run(cmd, check=True)
+        outs.append(out)
+    return outs
+
+
 def render_and_push(items):
     """Render slide specs to JPEGs, commit them, return {id: [urls]}."""
     import subprocess
@@ -50,13 +97,30 @@ def render_and_push(items):
         out = os.path.join(ROOT, "media", item["id"])
         if not os.path.isdir(out):
             os.makedirs(out)
-            n = len(item["slides"])
-            for i, s in enumerate(item["slides"]):
-                carousel.slide(s, i, n, item.get("handle", "@astrocodeai")).save(
-                    os.path.join(out, f"slide{i + 1:02d}.jpg"), "JPEG", quality=92)
+            slides = [dict(s) for s in item["slides"]]
+            lang = "it" if item.get("market", "IT").upper() == "IT" else "en"
+            if not slides[-1].get("rows"):
+                slides[-1].setdefault("badge", lang)  # Google Play badge on the last slide
+            n = len(slides)
+            paths = []
+            for i, s in enumerate(slides):
+                pth = os.path.join(out, f"slide{i + 1:02d}.jpg")
+                carousel.slide(s, i, n, item.get("handle", "@astrocodeai")).save(pth, "JPEG", quality=92)
+                paths.append(pth)
+            if item["type"].upper() == "REELS":
+                make_reel(paths, os.path.join(out, "reel.mp4"), item["id"])
+            elif item.get("music"):
+                make_slide_videos(paths, out, item["id"])
             changed = True
         files = sorted(f for f in os.listdir(out) if f.endswith(".jpg"))
-        urls[item["id"]] = [f"{RAW}/{item['id']}/{f}" for f in files]
+        if item["type"].upper() == "REELS":
+            urls[item["id"]] = [f"{RAW}/{item['id']}/reel.mp4"]
+            item.setdefault("cover", f"{RAW}/{item['id']}/{files[0]}")
+        elif item.get("music"):
+            vids = sorted(f for f in os.listdir(out) if f.startswith("slide") and f.endswith(".mp4"))
+            urls[item["id"]] = [f"{RAW}/{item['id']}/{f}" for f in vids]
+        else:
+            urls[item["id"]] = [f"{RAW}/{item['id']}/{f}" for f in files]
     if changed and not DRY:
         subprocess.run(["git", "add", "media"], cwd=ROOT, check=True)
         subprocess.run(["git", "commit", "-m", "instagram: render media [skip ci]"], cwd=ROOT, check=True)
