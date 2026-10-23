@@ -16,5 +16,11 @@
     "media_id": "18595737190070976",
     "published_at": "2026-10-22T14:26:22.110523+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-10-23-us-mercury-rx": {
+    "market": "US",
+    "media_id": "18109210811194619",
+    "published_at": "2026-10-23T22:21:02.443305+00:00",
+    "type": "CAROUSEL"
   }
 }
