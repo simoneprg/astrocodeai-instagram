@@ -28,5 +28,11 @@
     "media_id": "18021120257728859",
     "published_at": "2026-10-24T16:21:35.442862+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-10-24-us-mars-jupiter-leo-career": {
+    "market": "US",
+    "media_id": "18571829263078814",
+    "published_at": "2026-10-24T22:19:01.045911+00:00",
+    "type": "CAROUSEL"
   }
 }
