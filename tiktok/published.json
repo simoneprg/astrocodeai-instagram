@@ -26,5 +26,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261024183750B8E122BD916BF8D8A382\"}}",
     "last_try": "2026-10-24T18:37:42.696927+00:00"
+  },
+  "2026-10-24-us-mars-jupiter-leo-career": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026102422323035BD33A68182A23503EE\"}}",
+    "last_try": "2026-10-24T22:32:23.291516+00:00"
   }
 }
