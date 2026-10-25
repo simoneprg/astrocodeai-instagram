@@ -31,5 +31,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026102501081424C5BD679B86780EE9FB\"}}",
     "last_try": "2026-10-25T01:08:07.762587+00:00"
+  },
+  "2026-10-25-it-venere-bilancia-scelte": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026102517320755DC89B83B29860CAF02\"}}",
+    "last_try": "2026-10-25T17:31:59.872682+00:00"
   }
 }
