@@ -46,5 +46,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261026193632F86DB602EF5BA807835F\"}}",
     "last_try": "2026-10-26T19:36:22.943111+00:00"
+  },
+  "2026-10-26-us-sun-square-pluto-power": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261026223633E56A2486A6A4F83B46BB\"}}",
+    "last_try": "2026-10-26T22:36:25.720179+00:00"
   }
 }
