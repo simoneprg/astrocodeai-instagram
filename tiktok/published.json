@@ -43,8 +43,8 @@
     "last_try": "2026-10-26T01:21:29.033937+00:00"
   },
   "2026-10-26-it-saturno-rx-lavoro": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261026173519F057046464CB42EDD294\"}}",
-    "last_try": "2026-10-26T17:34:49.193681+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261026184956467F431B47DA500DB6F7\"}}",
+    "last_try": "2026-10-26T18:49:47.033799+00:00"
   }
 }
