@@ -38,8 +38,8 @@
     "last_try": "2026-10-25T19:30:29.039647+00:00"
   },
   "2026-10-25-us-full-moon-taurus-jealousy": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261025233109B8164E25ED03763746FE\"}}",
-    "last_try": "2026-10-25T23:31:01.933729+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261026012138A1C808D72E97AE4B4DC6\"}}",
+    "last_try": "2026-10-26T01:21:29.033937+00:00"
   }
 }
