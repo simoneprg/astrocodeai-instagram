@@ -48,8 +48,8 @@
     "last_try": "2026-10-26T19:36:22.943111+00:00"
   },
   "2026-10-26-us-sun-square-pluto-power": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610262333591E86CB86F581043D8B63\"}}",
-    "last_try": "2026-10-26T23:33:48.772390+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610270106578DDAB6A1B2F02374762B\"}}",
+    "last_try": "2026-10-27T01:06:50.460251+00:00"
   }
 }
