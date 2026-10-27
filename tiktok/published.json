@@ -58,8 +58,8 @@
     "last_try": "2026-10-27T19:30:50.909806+00:00"
   },
   "2026-10-27-us-venus-rx-ex-return": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261027223044D0C45130AED20A00D4C0\"}}",
-    "last_try": "2026-10-27T22:30:32.090054+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610272330305BD085EACD00060D0C1E\"}}",
+    "last_try": "2026-10-27T23:30:20.976338+00:00"
   }
 }
