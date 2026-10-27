@@ -53,8 +53,8 @@
     "last_try": "2026-10-27T01:06:50.460251+00:00"
   },
   "2026-10-27-it-marte-giove-leone-incontri": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610271730501D1CD91B55BCEFFA2BB9\"}}",
-    "last_try": "2026-10-27T17:30:39.131871+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610271850358AD09B5CA05981370BA3\"}}",
+    "last_try": "2026-10-27T18:50:23.342550+00:00"
   }
 }
