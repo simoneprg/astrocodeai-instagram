@@ -76,5 +76,11 @@
     "media_id": "18115069004042476",
     "published_at": "2026-10-28T18:22:19.518839+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-10-28-us-mercury-rx-money": {
+    "market": "US",
+    "media_id": "18074224115762638",
+    "published_at": "2026-10-28T22:16:17.739596+00:00",
+    "type": "CAROUSEL"
   }
 }
