@@ -78,8 +78,8 @@
     "last_try": "2026-10-29T18:33:26.595071+00:00"
   },
   "2026-10-29-us-gemini-moon-texts": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610292230382F0CCF38A9FA25191576\"}}",
-    "last_try": "2026-10-29T22:30:29.208932+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261029233110A7A82A3FBA55D0318EE2\"}}",
+    "last_try": "2026-10-29T23:31:00.570480+00:00"
   }
 }
