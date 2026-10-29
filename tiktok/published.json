@@ -73,8 +73,8 @@
     "last_try": "2026-10-29T00:51:14.833521+00:00"
   },
   "2026-10-29-it-marte-mercurio-litigi": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610291115023AD2741E8D32327B25D4\"}}",
-    "last_try": "2026-10-29T11:14:27.937337+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026102917304599D89098D878DCD36990\"}}",
+    "last_try": "2026-10-29T17:30:30.419882+00:00"
   }
 }
