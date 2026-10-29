@@ -82,5 +82,11 @@
     "media_id": "18074224115762638",
     "published_at": "2026-10-28T22:16:17.739596+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-10-29-it-marte-mercurio-litigi": {
+    "market": "IT",
+    "media_id": "18108483359207968",
+    "published_at": "2026-10-29T17:16:41.314228+00:00",
+    "type": "CAROUSEL"
   }
 }
