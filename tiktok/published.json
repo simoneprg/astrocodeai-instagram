@@ -86,5 +86,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261030193101CEE87E4632C8CBE8CD8C\"}}",
     "last_try": "2026-10-30T19:30:49.185198+00:00"
+  },
+  "2026-10-30-us-cancer-moon-tension": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610302230372F0CCF38A9FA2512B2B1\"}}",
+    "last_try": "2026-10-30T22:30:24.351270+00:00"
   }
 }
