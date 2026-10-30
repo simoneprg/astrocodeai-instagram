@@ -81,5 +81,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261030005324C78967308361D435426D\"}}",
     "last_try": "2026-10-30T00:53:11.149724+00:00"
+  },
+  "2026-10-30-it-venere-rx-decisioni": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202610301730315D3663914252F6C549BC\"}}",
+    "last_try": "2026-10-30T17:30:19.710509+00:00"
   }
 }
