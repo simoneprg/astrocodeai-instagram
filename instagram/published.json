@@ -108,8 +108,9 @@
     "type": "CAROUSEL"
   },
   "2026-10-31-it-giove-leone-soldi": {
-    "attempts": 1,
-    "last_error": "container 17877608907636398 status ERROR",
-    "last_try": "2026-10-31T17:12:20.482174+00:00"
+    "market": "IT",
+    "media_id": "18109936148216039",
+    "published_at": "2026-10-31T18:16:16.752943+00:00",
+    "type": "CAROUSEL"
   }
 }
