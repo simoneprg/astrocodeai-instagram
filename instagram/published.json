@@ -106,5 +106,10 @@
     "media_id": "18136753846661291",
     "published_at": "2026-10-30T22:13:35.452687+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-10-31-it-giove-leone-soldi": {
+    "attempts": 1,
+    "last_error": "container 17877608907636398 status ERROR",
+    "last_try": "2026-10-31T17:12:20.482174+00:00"
   }
 }
