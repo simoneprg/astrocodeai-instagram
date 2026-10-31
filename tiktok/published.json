@@ -91,5 +91,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261031004450C3602B29E378292C5891\"}}",
     "last_try": "2026-10-31T00:44:36.817791+00:00"
+  },
+  "2026-10-31-it-giove-leone-soldi": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261031173055A4FBE93FF3AD4EF975C7\"}}",
+    "last_try": "2026-10-31T17:30:42.863107+00:00"
   }
 }
