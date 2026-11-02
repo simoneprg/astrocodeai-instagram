@@ -130,5 +130,10 @@
     "media_id": "18111187292232800",
     "published_at": "2026-11-01T23:13:09.565213+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-02-it-saturno-rx-lavoro": {
+    "attempts": 1,
+    "last_error": "container 17877824130636398 status ERROR",
+    "last_try": "2026-11-02T17:14:09.037908+00:00"
   }
 }
