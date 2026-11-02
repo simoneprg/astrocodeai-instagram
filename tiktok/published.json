@@ -116,5 +116,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611021930409C2C2AF06F68B70DBC37\"}}",
     "last_try": "2026-11-02T19:30:26.773526+00:00"
+  },
+  "2026-11-02-us-venus-rx-decisions": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611022330597B2AA5E88570724ED2E2\"}}",
+    "last_try": "2026-11-02T23:30:45.017393+00:00"
   }
 }
