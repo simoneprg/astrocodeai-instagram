@@ -132,8 +132,9 @@
     "type": "CAROUSEL"
   },
   "2026-11-02-it-saturno-rx-lavoro": {
-    "attempts": 1,
-    "last_error": "container 17877824130636398 status ERROR",
-    "last_try": "2026-11-02T17:14:09.037908+00:00"
+    "market": "IT",
+    "media_id": "17977905717135315",
+    "published_at": "2026-11-02T18:18:46.295900+00:00",
+    "type": "CAROUSEL"
   }
 }
