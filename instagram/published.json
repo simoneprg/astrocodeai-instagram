@@ -142,5 +142,11 @@
     "media_id": "17941736127382578",
     "published_at": "2026-11-03T01:15:50.984139+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-03-it-gelosia-scorpione": {
+    "market": "IT",
+    "media_id": "18135363064739889",
+    "published_at": "2026-11-03T17:14:38.750234+00:00",
+    "type": "CAROUSEL"
   }
 }
