@@ -123,8 +123,8 @@
     "last_try": "2026-11-03T01:30:34.076386+00:00"
   },
   "2026-11-03-it-gelosia-scorpione": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261103183126EDBC437E85C1D805E1E5\"}}",
-    "last_try": "2026-11-03T18:31:07.066953+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611031934138402992AAFAF4935A69F\"}}",
+    "last_try": "2026-11-03T19:33:34.997891+00:00"
   }
 }
