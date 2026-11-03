@@ -118,8 +118,8 @@
     "last_try": "2026-11-02T19:30:26.773526+00:00"
   },
   "2026-11-02-us-venus-rx-decisions": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611030043573AEDB7C512C33B196DB2\"}}",
-    "last_try": "2026-11-03T00:43:42.873634+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611030130469C2C2AF06F68B75F81D7\"}}",
+    "last_try": "2026-11-03T01:30:34.076386+00:00"
   }
 }
