@@ -138,8 +138,9 @@
     "type": "CAROUSEL"
   },
   "2026-11-02-us-venus-rx-decisions": {
-    "attempts": 2,
-    "last_error": "container 17877851346636398 status ERROR",
-    "last_try": "2026-11-03T00:35:34.247154+00:00"
+    "market": "US",
+    "media_id": "17941736127382578",
+    "published_at": "2026-11-03T01:15:50.984139+00:00",
+    "type": "CAROUSEL"
   }
 }
