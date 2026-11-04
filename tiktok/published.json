@@ -131,5 +131,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261104013042175F30927C726627DFE3\"}}",
     "last_try": "2026-11-04T01:30:25.608407+00:00"
+  },
+  "2026-11-04-it-luna-vergine-chiusure": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261104173106B85799751C87E785930D\"}}",
+    "last_try": "2026-11-04T17:30:53.580650+00:00"
   }
 }
