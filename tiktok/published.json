@@ -143,8 +143,8 @@
     "last_try": "2026-11-05T01:30:54.977566+00:00"
   },
   "2026-11-05-it-sole-mercurio-verita": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611051731212BD2723494AF438FBD15\"}}",
-    "last_try": "2026-11-05T17:30:43.071192+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611051831162CBA86572594889FC246\"}}",
+    "last_try": "2026-11-05T18:31:01.397763+00:00"
   }
 }
