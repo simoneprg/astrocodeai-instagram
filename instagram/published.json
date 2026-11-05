@@ -162,8 +162,9 @@
     "type": "CAROUSEL"
   },
   "2026-11-04-us-venus-rx-money": {
-    "attempts": 1,
-    "last_error": "container 17878025865636398 status ERROR",
-    "last_try": "2026-11-04T23:13:30.788929+00:00"
+    "market": "US",
+    "media_id": "17969208678216926",
+    "published_at": "2026-11-05T00:35:57.094055+00:00",
+    "type": "CAROUSEL"
   }
 }
