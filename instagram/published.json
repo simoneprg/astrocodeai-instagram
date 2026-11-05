@@ -172,5 +172,11 @@
     "media_id": "18099398468446843",
     "published_at": "2026-11-05T18:19:15.347988+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-05-us-venus-rx-ex": {
+    "market": "US",
+    "media_id": "18138727267640523",
+    "published_at": "2026-11-05T23:13:45.142627+00:00",
+    "type": "CAROUSEL"
   }
 }
