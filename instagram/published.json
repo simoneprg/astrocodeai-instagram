@@ -184,5 +184,11 @@
     "media_id": "17921361546246099",
     "published_at": "2026-11-06T18:19:02.748138+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-06-us-mercury-rx-texts": {
+    "market": "US",
+    "media_id": "18022109009958623",
+    "published_at": "2026-11-06T23:12:46.946870+00:00",
+    "type": "CAROUSEL"
   }
 }
