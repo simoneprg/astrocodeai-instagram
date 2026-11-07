@@ -190,5 +190,11 @@
     "media_id": "18022109009958623",
     "published_at": "2026-11-06T23:12:46.946870+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-07-it-luna-venere-rx-nostalgia": {
+    "market": "IT",
+    "media_id": "18127554290314174",
+    "published_at": "2026-11-07T17:12:04.287118+00:00",
+    "type": "CAROUSEL"
   }
 }
