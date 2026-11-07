@@ -163,8 +163,8 @@
     "last_try": "2026-11-07T01:31:01.853687+00:00"
   },
   "2026-11-07-it-luna-venere-rx-nostalgia": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026110718302745926A8E953690C85FF5\"}}",
-    "last_try": "2026-11-07T18:30:12.217046+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261107193042136E2606421E8AD5ADBD\"}}",
+    "last_try": "2026-11-07T19:30:27.267170+00:00"
   }
 }
