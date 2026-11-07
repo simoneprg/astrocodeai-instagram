@@ -156,5 +156,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261106183120EFFEBFE3EFE11B9FBC08\"}}",
     "last_try": "2026-11-06T18:31:05.008884+00:00"
+  },
+  "2026-11-06-us-mercury-rx-texts": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026110700024706507A74A8E5A60A0279\"}}",
+    "last_try": "2026-11-07T00:02:32.286561+00:00"
   }
 }
