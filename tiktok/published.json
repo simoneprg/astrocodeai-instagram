@@ -161,5 +161,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261107013116EEC5551BCD3BB200A8D7\"}}",
     "last_try": "2026-11-07T01:31:01.853687+00:00"
+  },
+  "2026-11-07-it-luna-venere-rx-nostalgia": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611071730517F75B683955A0FA05241\"}}",
+    "last_try": "2026-11-07T17:30:36.001197+00:00"
   }
 }
