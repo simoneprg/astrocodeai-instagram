@@ -166,5 +166,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261107193042136E2606421E8AD5ADBD\"}}",
     "last_try": "2026-11-07T19:30:27.267170+00:00"
+  },
+  "2026-11-07-us-mars-jupiter-leo-fights": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261107233032649D552D82CCF9EF7AD4\"}}",
+    "last_try": "2026-11-07T23:30:17.668415+00:00"
   }
 }
