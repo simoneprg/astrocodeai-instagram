@@ -196,5 +196,11 @@
     "media_id": "18127554290314174",
     "published_at": "2026-11-07T17:12:04.287118+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-07-us-mars-jupiter-leo-fights": {
+    "market": "US",
+    "media_id": "18032960210684710",
+    "published_at": "2026-11-07T23:12:16.441927+00:00",
+    "type": "CAROUSEL"
   }
 }
