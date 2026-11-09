@@ -220,5 +220,11 @@
     "media_id": "18028779440875619",
     "published_at": "2026-11-09T17:15:24.021961+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-09-us-new-moon-scorpio-jealousy": {
+    "market": "US",
+    "media_id": "18338189755256788",
+    "published_at": "2026-11-09T23:12:42.705748+00:00",
+    "type": "CAROUSEL"
   }
 }
