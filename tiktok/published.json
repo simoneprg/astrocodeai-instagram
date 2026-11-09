@@ -181,5 +181,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261109013056A161BBDB31023B20B0CA\"}}",
     "last_try": "2026-11-09T01:30:43.483254+00:00"
+  },
+  "2026-11-09-it-decisioni-rimandate": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261109173119B99BBF2306559ECC04CA\"}}",
+    "last_try": "2026-11-09T17:31:02.371974+00:00"
   }
 }
