@@ -196,5 +196,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026111019305975BDC39D0C096BD2B128\"}}",
     "last_try": "2026-11-10T19:30:43.359199+00:00"
+  },
+  "2026-11-10-us-venus-direct-exes": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026111023303129682CE33776190A2D5F\"}}",
+    "last_try": "2026-11-10T23:30:16.808926+00:00"
   }
 }
