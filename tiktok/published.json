@@ -193,8 +193,8 @@
     "last_try": "2026-11-10T01:30:19.748297+00:00"
   },
   "2026-11-10-it-sole-quadrato-marte-lavoro": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611101730597F66CAC63F6B67DBA6DF\"}}",
-    "last_try": "2026-11-10T17:30:44.187066+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611101831037785CBED1F58B6EBA8C0\"}}",
+    "last_try": "2026-11-10T18:30:46.492854+00:00"
   }
 }
