@@ -232,5 +232,11 @@
     "media_id": "18084927062713709",
     "published_at": "2026-11-10T17:14:04.997076+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-10-us-venus-direct-exes": {
+    "market": "US",
+    "media_id": "18021247715957800",
+    "published_at": "2026-11-10T23:12:29.613191+00:00",
+    "type": "CAROUSEL"
   }
 }
