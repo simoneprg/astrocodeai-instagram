@@ -188,8 +188,8 @@
     "last_try": "2026-11-09T19:30:45.079068+00:00"
   },
   "2026-11-09-us-new-moon-scorpio-jealousy": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611092330435377760D181A525D52DF\"}}",
-    "last_try": "2026-11-09T23:30:30.650921+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611100043045A2E78D6595A7928B730\"}}",
+    "last_try": "2026-11-10T00:42:51.540546+00:00"
   }
 }
