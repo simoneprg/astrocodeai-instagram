@@ -226,5 +226,11 @@
     "media_id": "18338189755256788",
     "published_at": "2026-11-09T23:12:42.705748+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-10-it-sole-quadrato-marte-lavoro": {
+    "market": "IT",
+    "media_id": "18084927062713709",
+    "published_at": "2026-11-10T17:14:04.997076+00:00",
+    "type": "CAROUSEL"
   }
 }
