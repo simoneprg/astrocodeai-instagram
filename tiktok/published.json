@@ -201,5 +201,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611110131002D331E1F8AC2562D5A60\"}}",
     "last_try": "2026-11-11T01:30:44.026172+00:00"
+  },
+  "2026-11-11-it-venere-diretta-soldi": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261111173040217F42519443A1C74F4D\"}}",
+    "last_try": "2026-11-11T17:30:24.687660+00:00"
   }
 }
