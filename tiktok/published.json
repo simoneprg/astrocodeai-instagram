@@ -216,5 +216,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261112193112BFA359D466B201D98A8C\"}}",
     "last_try": "2026-11-12T19:30:59.632818+00:00"
+  },
+  "2026-11-12-us-saturn-rx-career": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611122330461D5B05316905DD0CA57E\"}}",
+    "last_try": "2026-11-12T23:30:29.895951+00:00"
   }
 }
