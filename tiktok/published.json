@@ -236,5 +236,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261115193441D0EC19A4A3A449EBC69B\"}}",
     "last_try": "2026-11-15T19:30:53.177720+00:00"
+  },
+  "2026-11-15-us-sagittarius-season-decisions": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261115233027E8F1B8622BE2122D768E\"}}",
+    "last_try": "2026-11-15T23:30:12.550601+00:00"
   }
 }
