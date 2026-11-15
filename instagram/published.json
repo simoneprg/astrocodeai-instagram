@@ -270,8 +270,9 @@
     "type": "CAROUSEL"
   },
   "2026-11-14-us-mars-jupiter-leo-fights": {
-    "attempts": 1,
-    "last_error": "container 17879032479636398 status ERROR",
-    "last_try": "2026-11-14T23:12:49.319882+00:00"
+    "market": "US",
+    "media_id": "18100448576442276",
+    "published_at": "2026-11-15T00:38:45.100037+00:00",
+    "type": "CAROUSEL"
   }
 }
