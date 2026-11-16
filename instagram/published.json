@@ -286,5 +286,11 @@
     "media_id": "18012301323003985",
     "published_at": "2026-11-15T23:15:38.632813+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-16-it-mercurio-diretto-messaggi": {
+    "market": "IT",
+    "media_id": "18344111992272019",
+    "published_at": "2026-11-16T17:16:19.177955+00:00",
+    "type": "CAROUSEL"
   }
 }
