@@ -261,5 +261,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026111801310789EF04964B0BB357863E\"}}",
     "last_try": "2026-11-18T01:30:42.092234+00:00"
+  },
+  "2026-11-18-it-marte-vergine-lavoro": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261118173048A8CB6A67865CE0E48A80\"}}",
+    "last_try": "2026-11-18T17:30:32.428149+00:00"
   }
 }
