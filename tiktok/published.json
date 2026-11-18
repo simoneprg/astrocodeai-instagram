@@ -263,8 +263,8 @@
     "last_try": "2026-11-18T01:30:42.092234+00:00"
   },
   "2026-11-18-it-marte-vergine-lavoro": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611181830341BCC541F09F244032A77\"}}",
-    "last_try": "2026-11-18T18:30:21.842950+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261118193033347125794A1DA618B664\"}}",
+    "last_try": "2026-11-18T19:30:20.280272+00:00"
   }
 }
