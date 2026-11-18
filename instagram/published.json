@@ -310,5 +310,11 @@
     "media_id": "18447272449179738",
     "published_at": "2026-11-17T23:13:40.551228+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-18-it-marte-vergine-lavoro": {
+    "market": "IT",
+    "media_id": "17876056434602256",
+    "published_at": "2026-11-18T17:14:00.306870+00:00",
+    "type": "CAROUSEL"
   }
 }
