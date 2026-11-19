@@ -271,5 +271,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261119013033F935ED07AB439705C3F7\"}}",
     "last_try": "2026-11-19T01:30:20.929569+00:00"
+  },
+  "2026-11-19-it-sole-sagittario-soldi": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261119173236A7B503CF664AE46D6F6E\"}}",
+    "last_try": "2026-11-19T17:32:21.394743+00:00"
   }
 }
