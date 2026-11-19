@@ -328,5 +328,11 @@
     "media_id": "18120036290099980",
     "published_at": "2026-11-19T17:13:13.441216+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-19-us-sun-square-mars-jealousy": {
+    "market": "US",
+    "media_id": "18013343033989034",
+    "published_at": "2026-11-19T23:12:20.333532+00:00",
+    "type": "CAROUSEL"
   }
 }
