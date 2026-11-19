@@ -322,5 +322,11 @@
     "media_id": "18015269723997489",
     "published_at": "2026-11-18T23:13:45.750189+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-19-it-sole-sagittario-soldi": {
+    "market": "IT",
+    "media_id": "18120036290099980",
+    "published_at": "2026-11-19T17:13:13.441216+00:00",
+    "type": "CAROUSEL"
   }
 }
