@@ -334,5 +334,11 @@
     "media_id": "18013343033989034",
     "published_at": "2026-11-19T23:12:20.333532+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-20-it-luna-ariete-nuovi-incontri": {
+    "market": "IT",
+    "media_id": "18102938132402268",
+    "published_at": "2026-11-20T17:12:58.808385+00:00",
+    "type": "CAROUSEL"
   }
 }
