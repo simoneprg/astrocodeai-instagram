@@ -283,8 +283,8 @@
     "last_try": "2026-11-20T01:30:55.941948+00:00"
   },
   "2026-11-20-it-luna-ariete-nuovi-incontri": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261120173123494F87DDBDE973670FB4\"}}",
-    "last_try": "2026-11-20T17:31:11.350917+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261120183147D63A815353936B768495\"}}",
+    "last_try": "2026-11-20T18:31:31.898639+00:00"
   }
 }
