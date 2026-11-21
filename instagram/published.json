@@ -352,5 +352,11 @@
     "media_id": "17920791486546449",
     "published_at": "2026-11-21T17:12:11.607918+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-21-us-mercury-direct-texts": {
+    "market": "US",
+    "media_id": "18647844226050159",
+    "published_at": "2026-11-21T23:13:16.890868+00:00",
+    "type": "CAROUSEL"
   }
 }
