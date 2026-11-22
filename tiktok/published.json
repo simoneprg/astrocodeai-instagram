@@ -301,5 +301,10 @@
     "attempts": 3,
     "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611220130542D6C35141B62C7F5DDCA\"}}",
     "last_try": "2026-11-22T01:30:42.916793+00:00"
+  },
+  "2026-11-22-it-luna-piena-gemelli-litigi": {
+    "attempts": 1,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261122173032703F0080E7698690845C\"}}",
+    "last_try": "2026-11-22T17:30:17.413305+00:00"
   }
 }
