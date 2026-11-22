@@ -364,5 +364,10 @@
     "media_id": "18143125147624663",
     "published_at": "2026-11-22T17:12:16.300628+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-22-us-sagittarius-season-decisions": {
+    "attempts": 1,
+    "last_error": "container 17879747688636398 status ERROR",
+    "last_try": "2026-11-22T23:13:46.145495+00:00"
   }
 }
