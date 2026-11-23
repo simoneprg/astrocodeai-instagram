@@ -313,8 +313,8 @@
     "last_try": "2026-11-23T01:30:23.109539+00:00"
   },
   "2026-11-23-it-venere-scorpione-amore-passato": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261123183045B904F8AA92B5559DC8AA\"}}",
-    "last_try": "2026-11-23T18:30:32.685889+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026112319310906A5C0CA7A9800B59F4A\"}}",
+    "last_try": "2026-11-23T19:30:54.002566+00:00"
   }
 }
