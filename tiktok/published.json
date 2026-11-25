@@ -328,8 +328,8 @@
     "last_try": "2026-11-24T19:30:19.671676+00:00"
   },
   "2026-11-24-us-mars-jupiter-leo-first-move": {
-    "attempts": 1,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"20261124233024E24C241E8C900EEA9177\"}}",
-    "last_try": "2026-11-24T23:30:13.079010+00:00"
+    "attempts": 2,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"2026112500462974600ADCFE4180DF88DB\"}}",
+    "last_try": "2026-11-25T00:46:16.640875+00:00"
   }
 }
