@@ -394,5 +394,11 @@
     "media_id": "17950292874356699",
     "published_at": "2026-11-24T23:13:00.409563+00:00",
     "type": "CAROUSEL"
+  },
+  "2026-11-25-it-luna-nuova-sagittario-decisioni": {
+    "market": "IT",
+    "media_id": "18127895426298893",
+    "published_at": "2026-11-25T17:12:55.257964+00:00",
+    "type": "CAROUSEL"
   }
 }
