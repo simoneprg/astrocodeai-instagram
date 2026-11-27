@@ -348,8 +348,8 @@
     "last_try": "2026-11-26T19:30:23.118813+00:00"
   },
   "2026-11-26-us-moon-cancer-exes": {
-    "attempts": 2,
-    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611270046005DC769B8582055E4E9C8\"}}",
-    "last_try": "2026-11-27T00:45:45.088194+00:00"
+    "attempts": 3,
+    "last_error": "post/publish/content/init/: 403 {\"error\":{\"code\":\"unaudited_client_can_only_post_to_private_accounts\",\"message\":\"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/\",\"log_id\":\"202611270130324B25AC5B2CBAAA1FF91D\"}}",
+    "last_try": "2026-11-27T01:30:18.579946+00:00"
   }
 }
